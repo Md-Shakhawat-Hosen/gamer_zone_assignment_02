@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.common,.logo-extra-color,.banner-extra-title{
+   background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.common-text{
+    color: #534C64;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+
+}
+/* Navbar section style start from here */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 240px;
+    background-color: #FFF;
+   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container img{
+    margin-right: 20px;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+}
+.menu-container a{
+    text-decoration: none;
+    margin-right: 32px;
+}
+.icons{
+   border-radius: 8px;
+     background-color: rgba(11, 2, 35, 0.10); 
+     padding: 18px 24px;
+}
+.icons a{
+    margin-right: 16px;
+    cursor: pointer;
+}
+.logo-title{
+    font-family: Work Sans;
+font-size: 45px;
+font-weight: 700;
+}
+
+.list-item{
+    color: #3C354F;
+font-family: Work Sans;
+font-size: 18px;
+font-weight: 500;
+
+}
+.fa-youtube{
+    color:#F61C0D;
+}
+/* Navbar section style end here */
+
+
+/* Banner section style start here */
+.top-banner{
+    background-image: url('./images/Group\ 14.png');
+    background-repeat: no-repeat;
+}
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 10px 240px;
+}
+.banner-title{
+   color: #0B0223;
+font-family: Work Sans;
+font-size: 3rem;
+font-weight: 600;
+}
+.banner-extra-title{
+    
+font-family: Work Sans;
+font-size: 5.9rem;
+font-style: normal;
+font-weight: 800;
+line-height: norm
+}
+.banner-left-content p{
+    color: #534C64;
+font-family: Work Sans;
+margin-bottom: 17px;
+font-size: 20px;
+font-weight: 500;
+
+}
+.banner-left-content{
+    width: 50%;
+    margin: 0 auto;
+}
+.banner-right-content{
+    width: 50%;
+}
+.banner-right-content img{
+    width: 100%;
+}
+.primary-btn{
+    margin-top: 41px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.btn{
+    padding: 21px 40px;
+    border: 0px;
+    color: #FFF;
+font-family: Work Sans;
+font-size: 20px;
+font-weight: 600;
+
+}
+.btn-1{
+    border-radius: 48px;
+   background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+.btn-2{
+    border-radius: 48px;
+background: #4EC5F7;
+}
+/* Banner section style end here */
+
+
+/* Online funny game section style here */
+.online-game-card{
+   display: flex;
+   gap: 24px;
+}
+.online-game{
+    padding: 0px 240px;
+}
+.online-game-container{
+    text-align: center;
+    margin-top: 120px;
+}
+.online-game-container h1{
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 48px;
+font-weight: 700;
+}
+.online-game-container .common-text{
+    margin-bottom: 48px;
+}
+.game-card img{
+ width: 250px;
+}
+.game-title{
+    width: 100%;
+}
+/* Online funny game section style end */
+
+
+
+
+
+/* Added media query for mobile view start */
+ @media screen and (max-width:576px) {
+    nav,.menu-container{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .logo-container{
+        margin-bottom: 62px;
+    }
+    .menu-container a{
+        margin-bottom: 36px;
+    }
+    .icons{
+        margin-top: 26px;
+    }
+    .banner-container{
+        margin-top: 96px;
+        padding: 0px;
+        flex-direction: column-reverse;
+        
+    }
+    .banner-left-content{
+        width: 90%;
+        margin:0 auto;
+    }
+    .banner-right-content{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .top-banner{
+        background-position: bottom left;
+        background-size: contain;
+    }
+    .online-game{
+    padding: 0px;
+}
+    .online-game-card{
+    flex-direction: column;
+}
+.game-card img{
+ width: 90%;
+ margin:0 auto
+}
+
+ }
+/* Added media query for mobile view end */
