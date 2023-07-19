@@ -171,7 +171,34 @@ font-weight: 700;
 /* Online funny game section style end */
 
 
+/* Play instant section style start from here */
+.instant-container{
+    padding: 120px 240px;
+}
+  .play-instant-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .play-instant-left-content{
+     text-align: right;
+  }
+  .play-instant-right-content{
+         position: relative;
+  }
+  .mini-card{
+    position: absolute;
+    bottom: -75px;
+    left: -145px;
+  }
 
+  .play-instant-title{
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+  }
+/* Play instant section style end here */
 
 
 /* Added media query for mobile view start */
@@ -217,6 +244,32 @@ font-weight: 700;
  width: 90%;
  margin:0 auto
 }
+.play-instant-left-content{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.instant-container{
+    /* padding: 120px 240px; */
+    padding: 0px;
+}
+  .play-instant-container{
+    flex-direction: column;
+  }
+  .play-instant-right-content{
+    padding-left: 50px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .mini-card{
+    padding-left: 150px;
+    bottom: -30px;
+  }
+  .play-instant-right-content img{
+    width: 90%;
+  }
+  .mini-card img{
+    width: 50%;
+  }
 
  }
 /* Added media query for mobile view end */
