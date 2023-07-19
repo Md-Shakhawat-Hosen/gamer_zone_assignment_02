@@ -260,6 +260,9 @@ footer{
   align-items: center;
   margin: 56px 0px;
 }
+.services h6{
+    font-size: 18px;
+}
 .conditions{
     display: flex;
   gap: 60px;
@@ -322,6 +325,7 @@ font-weight: 500;
  width: 90%;
  margin:0 auto
 }
+
 .play-instant-left-content{
     text-align: center;
     margin-bottom: 70px;
@@ -352,13 +356,12 @@ font-weight: 500;
 .world-gamer-container{
 
 }
+
   .gammer-contain{
     margin-top: 120px;
     padding: 0px;
 }
-.gamer-profile{
 
-}
 .gamer-profile{
     gap: 5px;
     padding: 5px 8px;
@@ -375,6 +378,10 @@ font-weight: 500;
 .services,.service-icons{
     display: grid;
     grid-template-columns: repeat(3,70px);
+}
+.services h6{
+    width: max-content;
+    font-size: 16px;
 }
 .conditions{
     display: grid;
@@ -394,3 +401,92 @@ font-weight: 500;
 }
  }
 /* Added media query for mobile view end */
+
+
+
+/* Media query for medium devices start from here */
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav,.menu-container{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .logo-container{
+        margin-bottom: 62px;
+    }
+    .menu-container a{
+        margin-bottom: 36px;
+    }
+    .icons{
+        margin-top: 26px;
+        margin-bottom: 20px;
+    }
+    .banner-container{
+        margin-top: 96px;
+        padding: 0px;
+        flex-direction: column-reverse;
+        
+    }
+    .banner-left-content{
+        width: 90%;
+        margin:0 auto;
+    }
+    .banner-right-content{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .top-banner{
+        background-position: bottom left;
+        background-size: contain;
+    }
+
+
+     .online-game{
+    padding: 0px;
+}
+    .online-game-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.instant-container{
+    /* padding: 120px 240px; */
+    padding: 0px;
+}
+.play-instant-left-content{
+    text-align: center;
+    margin-bottom: 70px;
+}
+  .play-instant-container{
+    flex-direction: column;
+  }
+  .play-instant-right-content{
+    padding-left: 50px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .mini-card{
+    padding-left: 150px;
+    bottom: -30px;
+  }
+  .play-instant-right-content img{
+    width: 90%;
+  }
+  .mini-card img{
+    width: 50%;
+  }
+
+
+  .world-gamer-container{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+}
+
+
+.services,.conditions{
+   display: grid;
+    grid-template-columns: repeat(2,200px);
+}
+}
+/* Media query for medium devices end here */
