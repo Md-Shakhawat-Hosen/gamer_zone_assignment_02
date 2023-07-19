@@ -19,6 +19,7 @@ font-style: normal;
 font-weight: 400;
 
 }
+
 /* Navbar section style start from here */
 nav{
     display: flex;
@@ -142,32 +143,75 @@ background: #4EC5F7;
 
 
 /* Online funny game section style here */
-.online-game-card{
-   display: flex;
-   gap: 24px;
-}
-.online-game{
-    padding: 0px 240px;
+.hurra{
+    margin-top: 120px;
+    margin-bottom: 120px;
+  padding: 0px 240px;
 }
 .online-game-container{
-    text-align: center;
-    margin-top: 120px;
+  text-align: center;
 }
-.online-game-container h1{
-    color: #0B0223;
-font-family: Work Sans;
-font-size: 48px;
-font-weight: 700;
+.funny-card-container{
+    margin-top: 50px;
+  display: flex;
+  gap: 24px;
 }
-.online-game-container .common-text{
-    margin-bottom: 48px;
+.funny-card{
+    width: 342px;
+  height: 404px;
+  margin-bottom: 100px;
 }
-.game-card img{
- width: 250px;
+.card {
+    margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+
 }
-.game-title{
-    width: 100%;
+
+
+
+.card img {
+  /* width: 300px; Adjust the size as needed */
+  width: 100%;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay i {
+  color: #fff;
+  font-size: 48px;
+}
+
+.overlay .text {
+  /* color: #fff;
+  font-size: 24px;
+  margin-top: 10px; */
+  font-size: 24px;
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 /* Online funny game section style end */
 
 
@@ -178,15 +222,27 @@ font-weight: 700;
   .play-instant-container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 80px;
   }
   .play-instant-left-content{
      text-align: right;
   }
   .play-instant-right-content{
+    width: 50%;
+  }
+  .play-instant-right-content img{
+    width: 100%;
+  }
+  .play-instant-right-content{
          position: relative;
   }
+  
+  .mini-card img{
+    width: 100%;
+  }
   .mini-card{
+    width: 50%;
     position: absolute;
     bottom: -75px;
     left: -145px;
@@ -279,7 +335,9 @@ font-weight: 500;
 
 }
 /* Footer section style end here */
-
+.hide{
+    display: none;
+}
 
 /* Added media query for mobile view start */
  @media screen and (max-width:576px) {
@@ -315,15 +373,26 @@ font-weight: 500;
         background-position: bottom left;
         background-size: contain;
     }
-    .online-game{
+    /* .online-game{
     padding: 0px;
 }
     .online-game-card{
     flex-direction: column;
-}
-.game-card img{
+} */
+
+/* .game-card img{
  width: 90%;
  margin:0 auto
+} */
+.hurra{
+  padding: 0px;
+}
+.funny-card{
+    width: 100%;
+    
+}
+  .funny-card-container{
+  flex-direction: column;
 }
 
 .play-instant-left-content{
@@ -342,6 +411,7 @@ font-weight: 500;
     width: 100%;
     margin: 0 auto;
   }
+
   .mini-card{
     padding-left: 150px;
     bottom: -30px;
@@ -349,8 +419,11 @@ font-weight: 500;
   .play-instant-right-content img{
     width: 90%;
   }
+  .mini-card{
+    width: 80%;
+  }
   .mini-card img{
-    width: 50%;
+    width: 80%;
   }
 
 .world-gamer-container{
@@ -441,18 +514,26 @@ font-weight: 500;
     }
 
 
-     .online-game{
+     /* .online-game{
     padding: 0px;
 }
     .online-game-card{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-}
+} */
 
+.hurra{
+    padding: 0;
+  }
+  .funny-card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
 
 .instant-container{
     /* padding: 120px 240px; */
     padding: 0px;
+    margin-top: 120px;
 }
 .play-instant-left-content{
     text-align: center;
@@ -474,7 +555,7 @@ font-weight: 500;
     width: 90%;
   }
   .mini-card img{
-    width: 50%;
+    width: 80%;
   }
 
 
