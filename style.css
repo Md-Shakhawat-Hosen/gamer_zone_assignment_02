@@ -232,6 +232,51 @@ background-clip: text;
 }
 /* world gamer section style end here */
 
+/* Footer section style start from here */
+footer{
+    margin-top: 118px;
+    background-color: #0B0223;
+}
+.footer-container{
+    text-align: center;
+    color: white;
+    padding: 130px 0px;
+}
+.service-icons{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.fa-brands{
+    color: white;
+    font-size: 2rem;
+}
+.services{
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  margin: 56px 0px;
+}
+.conditions{
+    display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.foot-right{
+    color: rgba(255, 255, 255, 0.60);
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+
+}
+/* Footer section style end here */
+
 
 /* Added media query for mobile view start */
  @media screen and (max-width:576px) {
@@ -247,6 +292,7 @@ background-clip: text;
     }
     .icons{
         margin-top: 26px;
+        margin-bottom: 20px;
     }
     .banner-container{
         margin-top: 96px;
@@ -326,5 +372,25 @@ background-clip: text;
     width: max-content;
 }
 
+.services,.service-icons{
+    display: grid;
+    grid-template-columns: repeat(3,70px);
+}
+.conditions{
+    display: grid;
+    width: 40%;
+    margin: 0px auto 28px;
+    grid-template-columns: repeat(2,1fr);
+}
+.conditions p{
+    width: max-content;
+}
+.conditions p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.60);
+}
+.foot-right{
+    margin-top: 78px;
+}
  }
 /* Added media query for mobile view end */
