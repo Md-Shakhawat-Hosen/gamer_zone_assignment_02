@@ -200,6 +200,38 @@ font-weight: 700;
   }
 /* Play instant section style end here */
 
+/* world gamer section style start from here */
+.gammer-contain{
+   padding: 120px 240px;
+}
+.world-gamer-container{
+     display: flex;
+     gap: 27px;
+     flex-wrap: wrap;
+     align-content: center;
+     justify-content: center;
+}
+.gamer-profile{
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    flex-basis: 250px;
+    gap: 16px;
+}
+.gamer-profile h3{
+    width: max-content;
+}
+.gamer-profile:hover{
+    border: 1px solid orange;
+    border-radius: 50px;
+    background:linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    /* padding: 10px 10px; */
+}
+/* world gamer section style end here */
+
 
 /* Added media query for mobile view start */
  @media screen and (max-width:576px) {
@@ -270,6 +302,29 @@ font-weight: 700;
   .mini-card img{
     width: 50%;
   }
+
+.world-gamer-container{
+
+}
+  .gammer-contain{
+    margin-top: 120px;
+    padding: 0px;
+}
+.gamer-profile{
+
+}
+.gamer-profile{
+    gap: 5px;
+    padding: 5px 8px;
+    flex-basis: 20%;
+}
+.gamer-profile img{
+    width: 30px;
+}
+.gamer-profile h3{
+    font-size: 8px;
+    width: max-content;
+}
 
  }
 /* Added media query for mobile view end */
