@@ -24,9 +24,9 @@ font-weight: 400;
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 37px 240px;
+    padding: 20px 240px;
     background-color: #FFF;
-   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .logo-container{
     display: flex;
@@ -40,9 +40,21 @@ nav{
     display: flex;
     align-items: center;
 }
-.menu-container a{
+.menu-container .list-item{
     text-decoration: none;
+    /* margin-right: 32px; */
+}
+.menu-container .list-item{
     margin-right: 32px;
+}
+.icons .item{
+    text-decoration: none;
+    color: #3C354F;
+font-family: Work Sans;
+font-size: 18px;
+font-weight: 500;
+margin-right: 24px;
+    
 }
 .icons{
    border-radius: 8px;
@@ -50,7 +62,6 @@ nav{
      padding: 18px 24px;
 }
 .icons a{
-    margin-right: 16px;
     cursor: pointer;
 }
 .logo-title{
@@ -66,8 +77,18 @@ font-size: 18px;
 font-weight: 500;
 
 }
-.fa-youtube{
+.icons{
+    
+}
+.menu-container .icons .fa-youtube{
     color:#F61C0D;
+    font-size: 20px;
+    margin-right: 16px;
+}
+.menu-container .icons .fa-tiktok{
+    color:#000000;
+    font-size: 20px;
+    
 }
 /* Navbar section style end here */
 
@@ -145,7 +166,6 @@ background: #4EC5F7;
 /* Online funny game section style here */
 .hurra{
     margin-top: 120px;
-    margin-bottom: 120px;
   padding: 0px 240px;
 }
 .online-game-container{
@@ -258,7 +278,7 @@ font-weight: 700;
 
 /* world gamer section style start from here */
 .gammer-contain{
-   padding: 120px 240px;
+   padding: 120px 50px;
 }
 .world-gamer-container{
      display: flex;
@@ -271,7 +291,7 @@ font-weight: 700;
     display: flex;
     align-items: center;
     padding: 5px 5px;
-    flex-basis: 250px;
+    flex-basis: 50px;
     gap: 16px;
 }
 .gamer-profile h3{
@@ -523,7 +543,10 @@ font-weight: 500;
 } */
 
 .hurra{
-    padding: 0;
+    padding: 0px;
+  }
+  .funny-card{
+    padding: 20px;
   }
   .funny-card-container{
     display: grid;
