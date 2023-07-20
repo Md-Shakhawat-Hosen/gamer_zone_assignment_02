@@ -256,7 +256,7 @@ nav {
 
 /* Play instant section style start from here */
 .instant-container {
-  padding: 120px 240px;
+  padding: 0px 240px;
 }
 .play-instant-container {
   display: flex;
@@ -298,6 +298,7 @@ nav {
 
 /* Career section start from here */
 .career-section{
+  margin-top: 120px;
   background-image:linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
 }
 .career-container{
